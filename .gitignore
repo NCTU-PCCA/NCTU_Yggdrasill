@@ -1,0 +1,27 @@
+# C/C++
+*
+!/**/
+!*.*
+*.exe
+*.out
+*.o
+
+# Letex
+*.aux
+*.log
+*.toc
+
+# Compression File
+*.zip
+*.tar
+*.tar.gz
+
+# Test Data
+*.in
+*.out
+!td.zip
+!*.td.zip
+!*.td.tar.gz
+
+# Windows
+desktop.ini
