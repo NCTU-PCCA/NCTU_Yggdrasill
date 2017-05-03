@@ -1,10 +1,11 @@
 #!/usr/bin/env python
+# -*- coding: UTF-8 -*-
 doc_class = '\documentclass [landscape,8pt,a4paper,twocolumn]{article}'
 
 head = '''\\title {NCTU\\_Yggdarsill Codebook}
 \\usepackage{parskip}
 \\usepackage{xeCJK} 
-\\setCJKmainfont{SourceHanSansTWHK-Normal}
+\\setCJKmainfont{SourceHanSerifTW-Light}
 \\setmonofont{Courier New}
 \\usepackage {listings}
 \\usepackage {color}
@@ -14,7 +15,8 @@ head = '''\\title {NCTU\\_Yggdarsill Codebook}
 \\definecolor {mymauve}{rgb}{0.58,0,0.82}
 \\usepackage{fancyheadings}
 \\rhead{\\thepage}
-\\lhead{National Chiao Tung University, NCTU\\_Yggdarsill}
+\\chead{初始化了嗎？陣列大小對嗎？\\texttt{x, y}沒寫反吧？會爆\\texttt{int}嗎？好，傳囉！}
+\\lhead{NCTU\\_Yggdarsill}
 \\pagestyle{fancy}
 \\cfoot{}
 \\setlength{\\headsep}{5pt}
@@ -56,22 +58,23 @@ lstset = '''\\lstset {
 
 doc_head = '''\\begin {document}
 \\thispagestyle{fancy}
-{ \\Huge National Chiao Tung University \\\\ Team Reference Document}
+{ \\Huge NCTU\\_Yggdarsill}
 \\tableofcontents
-\\newpage
 '''
 
-tail = '''\\input{note.tex}
+tail = '''
 \\end{document}
 '''
 
-src_types = ['.c', '.cpp', '.java', '.py']
+src_types = ['.c', '.cpp', '.java', '.py', '.sublime-build', '.sublime-settings']
 
 lang_list = {
   '.c': 'c',
   '.cpp': 'c++',
   '.java': 'java',
-  '.py': 'python'
+  '.py': 'python',
+  '.sublime-build': 'bash',
+  '.sublime-settings': 'bash'
 }
 
 import os

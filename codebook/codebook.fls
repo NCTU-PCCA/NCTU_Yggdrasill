@@ -1,4 +1,4 @@
-PWD /Users/fsh0524/gitProject/codebook
+PWD /Users/fsh0524/gitProject/NCTU_Yggdrasill/codebook
 INPUT /usr/local/texlive/2016/texmf.cnf
 INPUT /usr/local/texlive/2016/texmf-dist/web2c/texmf.cnf
 INPUT /usr/local/texlive/2016/texmf-var/web2c/xetex/xelatex.fmt
@@ -103,6 +103,13 @@ INPUT /usr/local/texlive/2016/texmf-dist/tex/latex/tipa/t3cmr.fd
 INPUT codebook.toc
 INPUT codebook.toc
 OUTPUT codebook.toc
+INPUT code/Building Environment/C++11.sublime-build
+INPUT /usr/local/texlive/2016/texmf-dist/tex/latex/listings/lstlang1.sty
+INPUT /usr/local/texlive/2016/texmf-dist/tex/latex/listings/lstlang1.sty
+INPUT /usr/local/texlive/2016/texmf-dist/tex/latex/listings/lstlang1.sty
+INPUT /usr/local/texlive/2016/texmf-dist/tex/latex/listings/lstlang1.sty
+INPUT code/Building Environment/C++11.sublime-build
+INPUT code/Building Environment/C++11.sublime-build
 INPUT code/Building Environment/default.cpp
 INPUT /usr/local/texlive/2016/texmf-dist/tex/latex/listings/lstlang1.sty
 INPUT /usr/local/texlive/2016/texmf-dist/tex/latex/listings/lstlang1.sty
@@ -112,119 +119,87 @@ INPUT /usr/local/texlive/2016/texmf-dist/tex/latex/listings/lstmisc.sty
 INPUT /usr/local/texlive/2016/texmf-dist/tex/latex/listings/lstmisc.sty
 INPUT code/Building Environment/default.cpp
 INPUT code/Building Environment/default.cpp
+INPUT code/Building Environment/Preferences.sublime-settings
+INPUT code/Building Environment/Preferences.sublime-settings
+INPUT code/Building Environment/Preferences.sublime-settings
 INPUT code/Building Environment/print_file.py
 INPUT /usr/local/texlive/2016/texmf-dist/tex/latex/listings/lstlang1.sty
 INPUT /usr/local/texlive/2016/texmf-dist/tex/latex/listings/lstlang1.sty
 INPUT code/Building Environment/print_file.py
 INPUT code/Building Environment/print_file.py
 INPUT code/Building Environment/vimrc
-INPUT /usr/local/texlive/2016/texmf-dist/tex/latex/listings/lstlang1.sty
-INPUT /usr/local/texlive/2016/texmf-dist/tex/latex/listings/lstlang1.sty
-INPUT /usr/local/texlive/2016/texmf-dist/tex/latex/listings/lstlang1.sty
-INPUT /usr/local/texlive/2016/texmf-dist/tex/latex/listings/lstlang1.sty
 INPUT code/Building Environment/vimrc
 INPUT code/Building Environment/vimrc
-INPUT code/To Be Classify/AC_Trie.cpp
-INPUT code/To Be Classify/AC_Trie.cpp
-INPUT code/To Be Classify/AC_Trie.cpp
-INPUT code/To Be Classify/BCC.cpp
-INPUT code/To Be Classify/BCC.cpp
-INPUT code/To Be Classify/BCC.cpp
-INPUT code/To Be Classify/BigInteger.java
-INPUT /usr/local/texlive/2016/texmf-dist/tex/latex/listings/lstlang1.sty
-INPUT /usr/local/texlive/2016/texmf-dist/tex/latex/listings/lstlang1.sty
-INPUT code/To Be Classify/BigInteger.java
-INPUT code/To Be Classify/BigInteger.java
-INPUT code/To Be Classify/Bipartite_Matching.cpp
-INPUT code/To Be Classify/Bipartite_Matching.cpp
-INPUT code/To Be Classify/Bipartite_Matching.cpp
-INPUT code/To Be Classify/BK.cpp
-INPUT code/To Be Classify/BK.cpp
-INPUT code/To Be Classify/BK.cpp
-INPUT code/To Be Classify/Black_Magic.cpp
-INPUT code/To Be Classify/Black_Magic.cpp
-INPUT code/To Be Classify/Black_Magic.cpp
-INPUT code/To Be Classify/Blossom.cpp
-INPUT code/To Be Classify/Blossom.cpp
-INPUT code/To Be Classify/Blossom.cpp
-INPUT code/To Be Classify/dice.cpp
-INPUT code/To Be Classify/dice.cpp
-INPUT code/To Be Classify/dice.cpp
-INPUT code/To Be Classify/Dinic.cpp
-INPUT code/To Be Classify/Dinic.cpp
-INPUT code/To Be Classify/Dinic.cpp
-INPUT code/To Be Classify/Dinic_Flow.cpp
-INPUT code/To Be Classify/Dinic_Flow.cpp
-INPUT code/To Be Classify/Dinic_Flow.cpp
-INPUT code/To Be Classify/extgcd.cpp
-INPUT code/To Be Classify/extgcd.cpp
-INPUT code/To Be Classify/extgcd.cpp
-INPUT code/To Be Classify/general_weighted_matching.cpp
-INPUT code/To Be Classify/general_weighted_matching.cpp
-INPUT code/To Be Classify/general_weighted_matching.cpp
-INPUT code/To Be Classify/geometry.cpp
-INPUT code/To Be Classify/geometry.cpp
-INPUT code/To Be Classify/geometry.cpp
-INPUT code/To Be Classify/Heavy_Light_Decomposition.cpp
-INPUT code/To Be Classify/Heavy_Light_Decomposition.cpp
-INPUT code/To Be Classify/Heavy_Light_Decomposition.cpp
-INPUT code/To Be Classify/huafen.cpp
-INPUT code/To Be Classify/huafen.cpp
-INPUT code/To Be Classify/huafen.cpp
-INPUT code/To Be Classify/KDtree_insert.cpp
-INPUT code/To Be Classify/KDtree_insert.cpp
-INPUT code/To Be Classify/KDtree_insert.cpp
-INPUT code/To Be Classify/KM.cpp
-INPUT code/To Be Classify/KM.cpp
-INPUT code/To Be Classify/KM.cpp
-INPUT code/To Be Classify/KM_n3.cpp
-INPUT code/To Be Classify/KM_n3.cpp
-INPUT code/To Be Classify/KM_n3.cpp
-INPUT code/To Be Classify/KM_no_big_int.cpp
-INPUT code/To Be Classify/KM_no_big_int.cpp
-INPUT code/To Be Classify/KM_no_big_int.cpp
-INPUT code/To Be Classify/maximum_density.cpp
-INPUT code/To Be Classify/maximum_density.cpp
-INPUT code/To Be Classify/maximum_density.cpp
-INPUT code/To Be Classify/min_cost_flow.cpp
-INPUT code/To Be Classify/min_cost_flow.cpp
-INPUT code/To Be Classify/min_cost_flow.cpp
-INPUT code/To Be Classify/Mincostflow.cpp
-INPUT code/To Be Classify/Mincostflow.cpp
-INPUT code/To Be Classify/Mincostflow.cpp
-INPUT code/To Be Classify/monotone.cpp
-INPUT code/To Be Classify/monotone.cpp
-INPUT code/To Be Classify/monotone.cpp
-INPUT code/To Be Classify/MST_directed.cpp
-INPUT code/To Be Classify/MST_directed.cpp
-INPUT code/To Be Classify/MST_directed.cpp
-INPUT code/To Be Classify/NTT.cpp
-INPUT code/To Be Classify/NTT.cpp
-INPUT code/To Be Classify/NTT.cpp
-INPUT code/To Be Classify/SCC.cpp
-INPUT code/To Be Classify/SCC.cpp
-INPUT code/To Be Classify/SCC.cpp
-INPUT code/To Be Classify/splay_tree.cpp
-INPUT code/To Be Classify/splay_tree.cpp
-INPUT code/To Be Classify/splay_tree.cpp
-INPUT code/To Be Classify/Stable_Marriage.cpp
-INPUT code/To Be Classify/Stable_Marriage.cpp
-INPUT code/To Be Classify/Stable_Marriage.cpp
-INPUT code/To Be Classify/Suffix_Array.cpp
-INPUT code/To Be Classify/Suffix_Array.cpp
-INPUT code/To Be Classify/Suffix_Array.cpp
-INPUT code/To Be Classify/Suffix_Automaton.cpp
-INPUT code/To Be Classify/Suffix_Automaton.cpp
-INPUT code/To Be Classify/Suffix_Automaton.cpp
-INPUT code/To Be Classify/Tonelli_Shanks.cpp
-INPUT code/To Be Classify/Tonelli_Shanks.cpp
-INPUT code/To Be Classify/Tonelli_Shanks.cpp
-INPUT code/To Be Classify/Treap.cpp
-INPUT code/To Be Classify/Treap.cpp
-INPUT code/To Be Classify/Treap.cpp
-INPUT code/To Be Classify/Z_Algorithm.cpp
-INPUT code/To Be Classify/Z_Algorithm.cpp
-INPUT code/To Be Classify/Z_Algorithm.cpp
-INPUT note.tex
-INPUT note.tex
+INPUT code/Convolution/FFT.cpp
+INPUT code/Convolution/FFT.cpp
+INPUT code/Convolution/FFT.cpp
+INPUT code/GNU Black Magic/Black_Magic.cpp
+INPUT code/GNU Black Magic/Black_Magic.cpp
+INPUT code/GNU Black Magic/Black_Magic.cpp
+INPUT code/GNU Black Magic/GNU_bitwise_operation.cpp
+INPUT code/GNU Black Magic/GNU_bitwise_operation.cpp
+INPUT code/GNU Black Magic/GNU_bitwise_operation.cpp
+INPUT code/Graph/BCC.cpp
+INPUT code/Graph/BCC.cpp
+INPUT code/Graph/BCC.cpp
+INPUT code/Graph/MST_directed.cpp
+INPUT code/Graph/MST_directed.cpp
+INPUT code/Graph/MST_directed.cpp
+INPUT code/Graph/SCC.cpp
+INPUT code/Graph/SCC.cpp
+INPUT code/Graph/SCC.cpp
+INPUT code/Matching/Bipartite_Matching.cpp
+INPUT code/Matching/Bipartite_Matching.cpp
+INPUT code/Matching/Bipartite_Matching.cpp
+INPUT code/Matching/Blossom.cpp
+INPUT code/Matching/Blossom.cpp
+INPUT code/Matching/Blossom.cpp
+INPUT code/Matching/Dinic.cpp
+INPUT code/Matching/Dinic.cpp
+INPUT code/Matching/Dinic.cpp
+INPUT code/Matching/general_weighted_matching.cpp
+INPUT code/Matching/general_weighted_matching.cpp
+INPUT code/Matching/general_weighted_matching.cpp
+INPUT code/Matching/KM.cpp
+INPUT code/Matching/KM.cpp
+INPUT code/Matching/KM.cpp
+INPUT code/Matching/MinCostFlow.cpp
+INPUT code/Matching/MinCostFlow.cpp
+INPUT code/Matching/MinCostFlow.cpp
+INPUT code/Matching/Stable_Marriage.cpp
+INPUT code/Matching/Stable_Marriage.cpp
+INPUT code/Matching/Stable_Marriage.cpp
+INPUT code/Mathematics/extgcd.cpp
+INPUT code/Mathematics/extgcd.cpp
+INPUT code/Mathematics/extgcd.cpp
+INPUT code/Mathematics/Miller-Rabin.cpp
+INPUT code/Mathematics/Miller-Rabin.cpp
+INPUT code/Mathematics/Miller-Rabin.cpp
+INPUT code/String/AC_Automaton.cpp
+INPUT code/String/AC_Automaton.cpp
+INPUT code/String/AC_Automaton.cpp
+INPUT code/String/Suffix_Array.cpp
+INPUT code/String/Suffix_Array.cpp
+INPUT code/String/Suffix_Array.cpp
+INPUT code/String/Suffix_Automaton.cpp
+INPUT code/String/Suffix_Automaton.cpp
+INPUT code/String/Suffix_Automaton.cpp
+INPUT code/String/Z_Algorithm.cpp
+INPUT code/String/Z_Algorithm.cpp
+INPUT code/String/Z_Algorithm.cpp
+INPUT code/Struct/splay_tree.cpp
+INPUT code/Struct/splay_tree.cpp
+INPUT code/Struct/splay_tree.cpp
+INPUT code/Struct/Treap.cpp
+INPUT code/Struct/Treap.cpp
+INPUT code/Struct/Treap.cpp
+INPUT code/Tree/Heavy_Light_Decomposition.cpp
+INPUT code/Tree/Heavy_Light_Decomposition.cpp
+INPUT code/Tree/Heavy_Light_Decomposition.cpp
+INPUT code/Tree/huafen.cpp
+INPUT code/Tree/huafen.cpp
+INPUT code/Tree/huafen.cpp
+INPUT code/Tree/KDtree_insert.cpp
+INPUT code/Tree/KDtree_insert.cpp
+INPUT code/Tree/KDtree_insert.cpp
 INPUT codebook.aux

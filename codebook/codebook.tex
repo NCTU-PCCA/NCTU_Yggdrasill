@@ -2,7 +2,7 @@
 \title {NCTU\_Yggdarsill Codebook}
 \usepackage{parskip}
 \usepackage{xeCJK} 
-\setCJKmainfont{SourceHanSansTWHK-Normal}
+\setCJKmainfont{SourceHanSerifTW-Light}
 \setmonofont{Courier New}
 \usepackage {listings}
 \usepackage {color}
@@ -12,7 +12,8 @@
 \definecolor {mymauve}{rgb}{0.58,0,0.82}
 \usepackage{fancyheadings}
 \rhead{\thepage}
-\lhead{National Chiao Tung University, NCTU\_Yggdarsill}
+\chead{初始化了嗎？陣列大小對嗎？\texttt{x, y}沒寫反吧？會爆\texttt{int}嗎？好，傳囉！}
+\lhead{NCTU\_Yggdarsill}
 \pagestyle{fancy}
 \cfoot{}
 \setlength{\headsep}{5pt}
@@ -52,84 +53,108 @@
 
 \begin {document}
 \thispagestyle{fancy}
-{ \Huge National Chiao Tung University \\ Team Reference Document}
+{ \Huge NCTU\_Yggdarsill}
 \tableofcontents
-\newpage
 
 \section{Building Environment}
+\subsection{C++11}
+\lstinputlisting [language=bash] {"code/Building Environment/C++11.sublime-build"}
 \subsection{Default}
 \lstinputlisting [language=c++] {"code/Building Environment/default.cpp"}
+\subsection{Preferences}
+\lstinputlisting [language=bash] {"code/Building Environment/Preferences.sublime-settings"}
 \subsection{Print File}
 \lstinputlisting [language=python] {"code/Building Environment/print_file.py"}
 \subsection{Vimrc}
 \lstinputlisting [language=bash] {"code/Building Environment/vimrc"}
-\section{To Be Classify}
-\subsection{AC Trie}
-\lstinputlisting [language=c++] {"code/To Be Classify/AC_Trie.cpp"}
-\subsection{BCC}
-\lstinputlisting [language=c++] {"code/To Be Classify/BCC.cpp"}
-\subsection{BigInteger}
-\lstinputlisting [language=java] {"code/To Be Classify/BigInteger.java"}
-\subsection{Bipartite Matching}
-\lstinputlisting [language=c++] {"code/To Be Classify/Bipartite_Matching.cpp"}
-\subsection{BK}
-\lstinputlisting [language=c++] {"code/To Be Classify/BK.cpp"}
+\section{Convolution}
+\subsection{FFT}
+\lstinputlisting [language=c++] {"code/Convolution/FFT.cpp"}
+\section{GNU Black Magic}
 \subsection{Black Magic}
-\lstinputlisting [language=c++] {"code/To Be Classify/Black_Magic.cpp"}
-\subsection{Blossom}
-\lstinputlisting [language=c++] {"code/To Be Classify/Blossom.cpp"}
-\subsection{Dice}
-\lstinputlisting [language=c++] {"code/To Be Classify/dice.cpp"}
-\subsection{Dinic}
-\lstinputlisting [language=c++] {"code/To Be Classify/Dinic.cpp"}
-\subsection{Dinic Flow}
-\lstinputlisting [language=c++] {"code/To Be Classify/Dinic_Flow.cpp"}
-\subsection{Extgcd}
-\lstinputlisting [language=c++] {"code/To Be Classify/extgcd.cpp"}
-\subsection{General Weighted Matching}
-\lstinputlisting [language=c++] {"code/To Be Classify/general_weighted_matching.cpp"}
-\subsection{Geometry}
-\lstinputlisting [language=c++] {"code/To Be Classify/geometry.cpp"}
-\subsection{Heavy Light Decomposition}
-\lstinputlisting [language=c++] {"code/To Be Classify/Heavy_Light_Decomposition.cpp"}
-\subsection{Huafen}
-\lstinputlisting [language=c++] {"code/To Be Classify/huafen.cpp"}
-\subsection{KDtree Insert}
-\lstinputlisting [language=c++] {"code/To Be Classify/KDtree_insert.cpp"}
-\subsection{KM}
-\lstinputlisting [language=c++] {"code/To Be Classify/KM.cpp"}
-\subsection{KM N3}
-\lstinputlisting [language=c++] {"code/To Be Classify/KM_n3.cpp"}
-\subsection{KM No Big Int}
-\lstinputlisting [language=c++] {"code/To Be Classify/KM_no_big_int.cpp"}
-\subsection{Maximum Density}
-\lstinputlisting [language=c++] {"code/To Be Classify/maximum_density.cpp"}
-\subsection{Min Cost Flow}
-\lstinputlisting [language=c++] {"code/To Be Classify/min_cost_flow.cpp"}
-\subsection{Mincostflow}
-\lstinputlisting [language=c++] {"code/To Be Classify/Mincostflow.cpp"}
-\subsection{Monotone}
-\lstinputlisting [language=c++] {"code/To Be Classify/monotone.cpp"}
+\lstinputlisting [language=c++] {"code/GNU Black Magic/Black_Magic.cpp"}
+\subsection{GNU Bitwise Operation}
+\lstinputlisting [language=c++] {"code/GNU Black Magic/GNU_bitwise_operation.cpp"}
+\section{Graph}
+\subsection{BCC}
+\lstinputlisting [language=c++] {"code/Graph/BCC.cpp"}
 \subsection{MST Directed}
-\lstinputlisting [language=c++] {"code/To Be Classify/MST_directed.cpp"}
-\subsection{NTT}
-\lstinputlisting [language=c++] {"code/To Be Classify/NTT.cpp"}
+\lstinputlisting [language=c++] {"code/Graph/MST_directed.cpp"}
 \subsection{SCC}
-\lstinputlisting [language=c++] {"code/To Be Classify/SCC.cpp"}
-\subsection{Splay Tree}
-\lstinputlisting [language=c++] {"code/To Be Classify/splay_tree.cpp"}
+\lstinputlisting [language=c++] {"code/Graph/SCC.cpp"}
+\section{Matching}
+\subsection{Bipartite Matching}
+\lstinputlisting [language=c++] {"code/Matching/Bipartite_Matching.cpp"}
+\subsection{Blossom}
+\lstinputlisting [language=c++] {"code/Matching/Blossom.cpp"}
+\subsection{Dinic}
+\lstinputlisting [language=c++] {"code/Matching/Dinic.cpp"}
+\subsection{General Weighted Matching}
+\lstinputlisting [language=c++] {"code/Matching/general_weighted_matching.cpp"}
+\subsection{KM}
+\lstinputlisting [language=c++] {"code/Matching/KM.cpp"}
+\subsection{MinCostFlow}
+\lstinputlisting [language=c++] {"code/Matching/MinCostFlow.cpp"}
 \subsection{Stable Marriage}
-\lstinputlisting [language=c++] {"code/To Be Classify/Stable_Marriage.cpp"}
+\lstinputlisting [language=c++] {"code/Matching/Stable_Marriage.cpp"}
+\section{Mathematics}
+\subsection{Extgcd}
+\lstinputlisting [language=c++] {"code/Mathematics/extgcd.cpp"}
+\subsection{Miller-Rabin}
+\lstinputlisting [language=c++] {"code/Mathematics/Miller-Rabin.cpp"}
+\section{String}
+\subsection{AC Automaton}
+\lstinputlisting [language=c++] {"code/String/AC_Automaton.cpp"}
 \subsection{Suffix Array}
-\lstinputlisting [language=c++] {"code/To Be Classify/Suffix_Array.cpp"}
+\lstinputlisting [language=c++] {"code/String/Suffix_Array.cpp"}
 \subsection{Suffix Automaton}
-\lstinputlisting [language=c++] {"code/To Be Classify/Suffix_Automaton.cpp"}
-\subsection{Tonelli Shanks}
-\lstinputlisting [language=c++] {"code/To Be Classify/Tonelli_Shanks.cpp"}
-\subsection{Treap}
-\lstinputlisting [language=c++] {"code/To Be Classify/Treap.cpp"}
+\lstinputlisting [language=c++] {"code/String/Suffix_Automaton.cpp"}
 \subsection{Z Algorithm}
-\lstinputlisting [language=c++] {"code/To Be Classify/Z_Algorithm.cpp"}
-\input{note.tex}
+\lstinputlisting [language=c++] {"code/String/Z_Algorithm.cpp"}
+\section{Struct}
+\subsection{Splay Tree}
+\lstinputlisting [language=c++] {"code/Struct/splay_tree.cpp"}
+\subsection{Treap}
+\lstinputlisting [language=c++] {"code/Struct/Treap.cpp"}
+\section{Tree}
+\subsection{Heavy Light Decomposition}
+\lstinputlisting [language=c++] {"code/Tree/Heavy_Light_Decomposition.cpp"}
+\subsection{Huafen}
+\lstinputlisting [language=c++] {"code/Tree/huafen.cpp"}
+\subsection{KDtree Insert}
+\lstinputlisting [language=c++] {"code/Tree/KDtree_insert.cpp"}
+% \section{Z To Be Classify}
+% \subsection{AC Trie}
+% \lstinputlisting [language=c++] {"code/Z To Be Classify/AC_Trie.cpp"}
+% \subsection{BigInteger}
+% \lstinputlisting [language=java] {"code/Z To Be Classify/BigInteger.java"}
+% \subsection{BK}
+% \lstinputlisting [language=c++] {"code/Z To Be Classify/BK.cpp"}
+% \subsection{Dice}
+% \lstinputlisting [language=c++] {"code/Z To Be Classify/dice.cpp"}
+% \subsection{Dinic Flow}
+% \lstinputlisting [language=c++] {"code/Z To Be Classify/Dinic_Flow.cpp"}
+% \subsection{KM}
+% \lstinputlisting [language=c++] {"code/Z To Be Classify/KM.cpp"}
+% \subsection{KM N3}
+% \lstinputlisting [language=c++] {"code/Z To Be Classify/KM_n3.cpp"}
+% \subsection{KM No Big Int}
+% \lstinputlisting [language=c++] {"code/Z To Be Classify/KM_no_big_int.cpp"}
+% \subsection{Maximum Density}
+% \lstinputlisting [language=c++] {"code/Z To Be Classify/maximum_density.cpp"}
+% \subsection{Mincostflow}
+% \lstinputlisting [language=c++] {"code/Z To Be Classify/Mincostflow.cpp"}
+% \subsection{Monotone}
+% \lstinputlisting [language=c++] {"code/Z To Be Classify/monotone.cpp"}
+% \subsection{NTT}
+% \lstinputlisting [language=c++] {"code/Z To Be Classify/NTT.cpp"}
+% \subsection{SCC}
+% \lstinputlisting [language=c++] {"code/Z To Be Classify/SCC.cpp"}
+% \subsection{Tonelli Shanks}
+% \lstinputlisting [language=c++] {"code/Z To Be Classify/Tonelli_Shanks.cpp"}
+% \section{Geometry}
+% \subsection{Geometry}
+% \lstinputlisting [language=c++] {"code/Geometry/geometry.cpp"}
+
 \end{document}
 
