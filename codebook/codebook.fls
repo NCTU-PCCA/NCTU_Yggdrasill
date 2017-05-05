@@ -133,6 +133,12 @@ INPUT code/Building Environment/vimrc
 INPUT code/Convolution/FFT.cpp
 INPUT code/Convolution/FFT.cpp
 INPUT code/Convolution/FFT.cpp
+INPUT code/Geometry/geometry.cpp
+INPUT code/Geometry/geometry.cpp
+INPUT code/Geometry/geometry.cpp
+INPUT code/Geometry/MinimumCoveringCircle.cpp
+INPUT code/Geometry/MinimumCoveringCircle.cpp
+INPUT code/Geometry/MinimumCoveringCircle.cpp
 INPUT code/GNU Black Magic/Black_Magic.cpp
 INPUT code/GNU Black Magic/Black_Magic.cpp
 INPUT code/GNU Black Magic/Black_Magic.cpp
@@ -196,9 +202,6 @@ INPUT code/Struct/Treap.cpp
 INPUT code/Tree/Heavy_Light_Decomposition.cpp
 INPUT code/Tree/Heavy_Light_Decomposition.cpp
 INPUT code/Tree/Heavy_Light_Decomposition.cpp
-INPUT code/Tree/huafen.cpp
-INPUT code/Tree/huafen.cpp
-INPUT code/Tree/huafen.cpp
 INPUT code/Tree/KDtree_insert.cpp
 INPUT code/Tree/KDtree_insert.cpp
 INPUT code/Tree/KDtree_insert.cpp

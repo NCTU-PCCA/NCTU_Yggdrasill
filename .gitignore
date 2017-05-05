@@ -28,3 +28,11 @@
 desktop.ini
 
 .DS_Store
+
+*.fdb_latexmk
+
+*.fls
+
+*.gz
+
+*.fdb_latexmk

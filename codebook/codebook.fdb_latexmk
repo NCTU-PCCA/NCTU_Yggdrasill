@@ -1,5 +1,5 @@
 # Fdb version 3
-["pdflatex"] 1493802460 "codebook.tex" "codebook.pdf" "codebook" 1493802469
+["pdflatex"] 1493992705 "codebook.tex" "codebook.pdf" "codebook" 1493992714
   "/usr/local/texlive/2016/texmf-dist/tex/generic/ifxetex/ifxetex.sty" 1284331290 1458 43ab4710dc82f3edeabecd0d099626b2 ""
   "/usr/local/texlive/2016/texmf-dist/tex/generic/oberdiek/ifpdf.sty" 1463348357 1226 01a89dfef361f60ae7df13cd2946bc16 ""
   "/usr/local/texlive/2016/texmf-dist/tex/generic/oberdiek/ifvtex.sty" 1463608860 6797 90b7f83b0ad46826bc16058b1e3d48df ""
@@ -59,6 +59,8 @@
   "code/Convolution/FFT.cpp" 1493801164 1034 21d34cc1f765787476ea8f0f3bb86a7b ""
   "code/GNU Black Magic/Black_Magic.cpp" 1476251310 1589 fae4ffe675070f00aea57b9397e47f1d ""
   "code/GNU Black Magic/GNU_bitwise_operation.cpp" 1493801402 1249 c010e4770d4825d32119a5e934a90252 ""
+  "code/Geometry/MinimumCoveringCircle.cpp" 1493992579 869 5132ed6f74484913e2eec26ce1b2b93d ""
+  "code/Geometry/geometry.cpp" 1476251310 7190 bae048cc5e75a0695199cdbe8c99e11e ""
   "code/Graph/BCC.cpp" 1493799881 2013 d672eed00e0642f8a8e450fffaee14e3 ""
   "code/Graph/MST_directed.cpp" 1476251310 1387 347809d81c455efeda8f36f2419e1a4b ""
   "code/Graph/SCC.cpp" 1493800578 2316 b5023bd2e21e6cda732ae3aa14e8233a ""
@@ -79,12 +81,11 @@
   "code/Struct/splay_tree.cpp" 1476251310 2111 621d7c2f1d53a9621801444cd483f921 ""
   "code/Tree/Heavy_Light_Decomposition.cpp" 1476251310 2350 556207f7e69ba0af1121d3c473ba92a3 ""
   "code/Tree/KDtree_insert.cpp" 1476251310 5341 609479df6b82953316bd620f1611a8e9 ""
-  "code/Tree/huafen.cpp" 1476251310 1441 96c887a51ac7b8924095f003b9d24674 ""
-  "codebook.aux" 1493802469 5617 6cba6e9fd262a7dbf390411b036a11eb ""
-  "codebook.tex" 1493802440 5866 d13814202f13c1c4d0cbd2d56b3f1f8d ""
-  "codebook.toc" 1493802469 2223 f62c67c1049fceb80c3081cf6e9bb202 ""
+  "codebook.aux" 1493992714 5879 870cd40f7d4b0263bfdb4b39eab093f4 ""
+  "codebook.tex" 1493992694 5975 f0d3e05a4c5ee06000d41d8a0573af9d ""
+  "codebook.toc" 1493992714 2351 bc8c5b58aa6e761d56a51cd534dcecaa ""
   (generated)
-  "codebook.log"
-  "codebook.aux"
   "codebook.toc"
+  "codebook.aux"
+  "codebook.log"
   "codebook.pdf"
