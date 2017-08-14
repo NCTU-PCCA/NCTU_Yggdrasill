@@ -154,27 +154,35 @@ INPUT code/Graph/MST_directed.cpp
 INPUT code/Graph/SCC.cpp
 INPUT code/Graph/SCC.cpp
 INPUT code/Graph/SCC.cpp
-INPUT code/Matching/Bipartite_Matching.cpp
-INPUT code/Matching/Bipartite_Matching.cpp
-INPUT code/Matching/Bipartite_Matching.cpp
+INPUT code/Java/Big Integer.java
+INPUT /usr/local/texlive/2016/texmf-dist/tex/latex/listings/lstlang1.sty
+INPUT /usr/local/texlive/2016/texmf-dist/tex/latex/listings/lstlang1.sty
+INPUT code/Java/Big Integer.java
+INPUT code/Java/Big Integer.java
+INPUT code/Java/Prime.java
+INPUT code/Java/Prime.java
+INPUT code/Java/Prime.java
+INPUT code/Matching/Bipartite Matching.cpp
+INPUT code/Matching/Bipartite Matching.cpp
+INPUT code/Matching/Bipartite Matching.cpp
 INPUT code/Matching/Blossom.cpp
 INPUT code/Matching/Blossom.cpp
 INPUT code/Matching/Blossom.cpp
 INPUT code/Matching/Dinic.cpp
 INPUT code/Matching/Dinic.cpp
 INPUT code/Matching/Dinic.cpp
-INPUT code/Matching/general_weighted_matching.cpp
-INPUT code/Matching/general_weighted_matching.cpp
-INPUT code/Matching/general_weighted_matching.cpp
+INPUT code/Matching/General Weighted Matching.cpp
+INPUT code/Matching/General Weighted Matching.cpp
+INPUT code/Matching/General Weighted Matching.cpp
 INPUT code/Matching/KM.cpp
 INPUT code/Matching/KM.cpp
 INPUT code/Matching/KM.cpp
-INPUT code/Matching/MinCostFlow.cpp
-INPUT code/Matching/MinCostFlow.cpp
-INPUT code/Matching/MinCostFlow.cpp
-INPUT code/Matching/Stable_Marriage.cpp
-INPUT code/Matching/Stable_Marriage.cpp
-INPUT code/Matching/Stable_Marriage.cpp
+INPUT code/Matching/Min Cost Flow.cpp
+INPUT code/Matching/Min Cost Flow.cpp
+INPUT code/Matching/Min Cost Flow.cpp
+INPUT code/Matching/Stable Marriage.cpp
+INPUT code/Matching/Stable Marriage.cpp
+INPUT code/Matching/Stable Marriage.cpp
 INPUT code/Mathematics/extgcd.cpp
 INPUT code/Mathematics/extgcd.cpp
 INPUT code/Mathematics/extgcd.cpp
@@ -184,6 +192,9 @@ INPUT code/Mathematics/Miller-Rabin.cpp
 INPUT code/String/AC_Automaton.cpp
 INPUT code/String/AC_Automaton.cpp
 INPUT code/String/AC_Automaton.cpp
+INPUT code/String/BWT.cpp
+INPUT code/String/BWT.cpp
+INPUT code/String/BWT.cpp
 INPUT code/String/Suffix_Array.cpp
 INPUT code/String/Suffix_Array.cpp
 INPUT code/String/Suffix_Array.cpp

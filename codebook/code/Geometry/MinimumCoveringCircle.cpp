@@ -1,3 +1,15 @@
+#define F(n) Fi(i,n)
+#define Fi(i,n) Fl(i,0,n)
+#define Fl(i,l,n) for(int i=(l);i<(int)(n);++i)
+#include <bits/stdc++.h>
+using namespace std;
+const double eps = 1e-6;
+#define x first
+#define y second
+typedef pair<double, double> point;
+inline double dq(const point& p1, const point& p2) {
+	return sqrt((p1.x-p2.x)*(p1.x-p2.x)+(p1.y-p2.y)*(p1.y-p2.y));
+}
 inline point oc(const point& pa, const point& pb, const point& pc) {
 	double a, b, c, d, e, f, delta, dx, dy;
 	// ax + by = c
@@ -13,12 +25,10 @@ inline point oc(const point& pa, const point& pb, const point& pc) {
 	dy = a*f-d*c;
 	return point(dx/delta, dy/delta);
 }
-inline point enc(const point& a, const point& b, const point& c) {
-	vector<point> tmp;
-	tmp.clear();tmp.push_back(a);tmp.push_back(b);tmp.push_back(c);
+inline point enc(const vector<point>& tmp) {
 	point O = tmp[0];
 	double r = 0;
-	Fl(i, 1, 3) if (dq(O, tmp[i]) - r > eps) {
+	Fl(i, 1, tmp.size()) if (dq(O, tmp[i]) - r > eps) {
 		O = tmp[i], r = 0;
 		Fi(j, i) if (dq(O, tmp[j]) - r > eps) {
 			O = point((tmp[i].x+tmp[j].x)/2, (tmp[i].y+tmp[j].y)/2);
@@ -28,4 +38,21 @@ inline point enc(const point& a, const point& b, const point& c) {
 		}
 	}
 	return O;
+}
+int n;
+vector<point> v;
+int main() {
+	ios_base::sync_with_stdio(false);
+	cin.tie(NULL);
+	while (cin >> n) {
+		if (!n) break;
+		v.clear();
+		F(n) {
+			point tp;
+			cin >> tp.x >> tp.y;
+			v.push_back(tp);
+		}
+		point ct = enc(v);
+		cout << setprecision(2) << fixed << ct.x << ' ' << ct.y << ' ' << dq(ct, v[0]) << '\n';
+	}
 }
