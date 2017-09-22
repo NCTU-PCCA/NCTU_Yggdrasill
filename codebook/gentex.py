@@ -15,7 +15,7 @@ head = '''\\title {NCTU\\_Yggdarsill Codebook}
 \\definecolor {mymauve}{rgb}{0.58,0,0.82}
 \\usepackage{fancyheadings}
 \\rhead{\\thepage}
-\\chead{初始化了嗎？陣列大小對嗎？\\texttt{x, y}沒寫反吧？會爆\\texttt{int}嗎？好，傳囉！}
+\\chead{初始化？陣列大小？\\texttt{x, y}沒寫反？爆\\texttt{int}？1-based？好，傳囉！}
 \\lhead{NCTU\\_Yggdarsill}
 \\pagestyle{fancy}
 \\cfoot{}
@@ -95,7 +95,7 @@ print doc_class
 print head
 print lstset
 print doc_head
-for root, dirs, files in os.walk('.'):
+for root, dirs, files in os.walk('code'):
   if root.find('.svn') >= 0:
     continue
   secname = os.path.basename(root)

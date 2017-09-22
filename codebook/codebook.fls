@@ -1,130 +1,123 @@
 PWD /Users/fsh0524/gitProject/NCTU_Yggdrasill/codebook
-INPUT /usr/local/texlive/2016/texmf.cnf
-INPUT /usr/local/texlive/2016/texmf-dist/web2c/texmf.cnf
-INPUT /usr/local/texlive/2016/texmf-var/web2c/xetex/xelatex.fmt
+INPUT /usr/local/texlive/2017/texmf.cnf
+INPUT /usr/local/texlive/2017/texmf-dist/web2c/texmf.cnf
+INPUT /usr/local/texlive/2017/texmf-var/web2c/xetex/xelatex.fmt
 INPUT codebook.tex
 OUTPUT codebook.log
-INPUT /usr/local/texlive/2016/texmf-dist/tex/latex/base/article.cls
-INPUT /usr/local/texlive/2016/texmf-dist/tex/latex/base/article.cls
-INPUT /usr/local/texlive/2016/texmf-dist/tex/latex/base/size10.clo
-INPUT /usr/local/texlive/2016/texmf-dist/tex/latex/base/size10.clo
-INPUT /usr/local/texlive/2016/texmf-dist/tex/latex/parskip/parskip.sty
-INPUT /usr/local/texlive/2016/texmf-dist/tex/latex/parskip/parskip.sty
-INPUT /usr/local/texlive/2016/texmf-dist/tex/xelatex/xecjk/xeCJK.sty
-INPUT /usr/local/texlive/2016/texmf-dist/tex/xelatex/xecjk/xeCJK.sty
-INPUT /usr/local/texlive/2016/texmf-dist/tex/latex/l3kernel/expl3.sty
-INPUT /usr/local/texlive/2016/texmf-dist/tex/latex/l3kernel/expl3.sty
-INPUT /usr/local/texlive/2016/texmf-dist/tex/latex/l3kernel/expl3-code.tex
-INPUT /usr/local/texlive/2016/texmf-dist/tex/latex/l3kernel/expl3-code.tex
-INPUT /usr/local/texlive/2016/texmf-dist/tex/generic/unicode-data/UnicodeData.txt
-INPUT /usr/local/texlive/2016/texmf-dist/tex/generic/unicode-data/CaseFolding.txt
-INPUT /usr/local/texlive/2016/texmf-dist/tex/generic/unicode-data/SpecialCasing.txt
-INPUT /usr/local/texlive/2016/texmf-dist/tex/latex/l3kernel/l3xdvipdfmx.def
-INPUT /usr/local/texlive/2016/texmf-dist/tex/latex/l3kernel/l3xdvipdfmx.def
-INPUT /usr/local/texlive/2016/texmf-dist/tex/latex/l3packages/xtemplate/xtemplate.sty
-INPUT /usr/local/texlive/2016/texmf-dist/tex/latex/l3packages/xtemplate/xtemplate.sty
-INPUT /usr/local/texlive/2016/texmf-dist/tex/latex/l3packages/xparse/xparse.sty
-INPUT /usr/local/texlive/2016/texmf-dist/tex/latex/l3packages/xparse/xparse.sty
-INPUT /usr/local/texlive/2016/texmf-dist/tex/latex/l3packages/l3keys2e/l3keys2e.sty
-INPUT /usr/local/texlive/2016/texmf-dist/tex/latex/l3packages/l3keys2e/l3keys2e.sty
-INPUT /usr/local/texlive/2016/texmf-dist/tex/latex/fontspec/fontspec.sty
-INPUT /usr/local/texlive/2016/texmf-dist/tex/latex/fontspec/fontspec.sty
-INPUT /usr/local/texlive/2016/texmf-dist/tex/latex/fontspec/fontspec-xetex.sty
-INPUT /usr/local/texlive/2016/texmf-dist/tex/latex/fontspec/fontspec-xetex.sty
-INPUT /usr/local/texlive/2016/texmf-dist/tex/latex/fontspec/tuenc.def
-INPUT /usr/local/texlive/2016/texmf-dist/tex/latex/base/fontenc.sty
-INPUT /usr/local/texlive/2016/texmf-dist/tex/latex/base/fontenc.sty
-INPUT /usr/local/texlive/2016/texmf-dist/tex/latex/euenc/eu1enc.def
-INPUT /usr/local/texlive/2016/texmf-dist/tex/latex/euenc/eu1enc.def
-INPUT /usr/local/texlive/2016/texmf-dist/tex/latex/euenc/eu1lmr.fd
-INPUT /usr/local/texlive/2016/texmf-dist/tex/latex/euenc/eu1lmr.fd
-INPUT /usr/local/texlive/2016/texmf-dist/tex/xelatex/xunicode/xunicode.sty
-INPUT /usr/local/texlive/2016/texmf-dist/tex/xelatex/xunicode/xunicode.sty
-INPUT /usr/local/texlive/2016/texmf-dist/tex/latex/tipa/t3enc.def
-INPUT /usr/local/texlive/2016/texmf-dist/tex/latex/euenc/eu1lmss.fd
-INPUT /usr/local/texlive/2016/texmf-dist/tex/latex/euenc/eu1lmss.fd
-INPUT /usr/local/texlive/2016/texmf-dist/tex/latex/graphics/graphicx.sty
-INPUT /usr/local/texlive/2016/texmf-dist/tex/latex/graphics/graphicx.sty
-INPUT /usr/local/texlive/2016/texmf-dist/tex/latex/graphics/keyval.sty
-INPUT /usr/local/texlive/2016/texmf-dist/tex/latex/graphics/keyval.sty
-INPUT /usr/local/texlive/2016/texmf-dist/tex/latex/graphics/graphics.sty
-INPUT /usr/local/texlive/2016/texmf-dist/tex/latex/graphics/graphics.sty
-INPUT /usr/local/texlive/2016/texmf-dist/tex/latex/graphics/trig.sty
-INPUT /usr/local/texlive/2016/texmf-dist/tex/latex/graphics/trig.sty
-INPUT /usr/local/texlive/2016/texmf-dist/tex/latex/graphics-cfg/graphics.cfg
-INPUT /usr/local/texlive/2016/texmf-dist/tex/latex/graphics-cfg/graphics.cfg
-INPUT /usr/local/texlive/2016/texmf-dist/tex/xelatex/xetex-def/xetex.def
-INPUT /usr/local/texlive/2016/texmf-dist/tex/xelatex/xetex-def/xetex.def
-INPUT /usr/local/texlive/2016/texmf-dist/tex/generic/oberdiek/infwarerr.sty
-INPUT /usr/local/texlive/2016/texmf-dist/tex/generic/oberdiek/infwarerr.sty
-INPUT /usr/local/texlive/2016/texmf-dist/tex/generic/oberdiek/ltxcmds.sty
-INPUT /usr/local/texlive/2016/texmf-dist/tex/generic/oberdiek/ltxcmds.sty
-INPUT /usr/local/texlive/2016/texmf-dist/tex/latex/fontspec/fontspec.cfg
-INPUT /usr/local/texlive/2016/texmf-dist/tex/latex/fontspec/fontspec.cfg
-INPUT /usr/local/texlive/2016/texmf-dist/tex/xelatex/xecjk/xunicode-addon.sty
-INPUT /usr/local/texlive/2016/texmf-dist/tex/xelatex/xecjk/xunicode-addon.sty
-INPUT /usr/local/texlive/2016/texmf-dist/tex/xelatex/xunicode/xunicode.sty
-INPUT /usr/local/texlive/2016/texmf-dist/tex/xelatex/xunicode/xunicode.sty
-INPUT /usr/local/texlive/2016/texmf-dist/tex/xelatex/xecjk/xunicode-extra.def
-INPUT /usr/local/texlive/2016/texmf-dist/tex/xelatex/xecjk/xunicode-extra.def
-INPUT /usr/local/texlive/2016/texmf-dist/tex/xelatex/xecjk/xeCJK.cfg
-INPUT /usr/local/texlive/2016/texmf-dist/tex/xelatex/xecjk/xeCJK.cfg
-INPUT /usr/local/texlive/2016/texmf-dist/tex/latex/listings/listings.sty
-INPUT /usr/local/texlive/2016/texmf-dist/tex/latex/listings/listings.sty
-INPUT /usr/local/texlive/2016/texmf-dist/tex/latex/listings/lstmisc.sty
-INPUT /usr/local/texlive/2016/texmf-dist/tex/latex/listings/lstmisc.sty
-INPUT /usr/local/texlive/2016/texmf-dist/tex/latex/listings/listings.cfg
-INPUT /usr/local/texlive/2016/texmf-dist/tex/latex/listings/listings.cfg
-INPUT /usr/local/texlive/2016/texmf-dist/tex/latex/graphics/color.sty
-INPUT /usr/local/texlive/2016/texmf-dist/tex/latex/graphics/color.sty
-INPUT /usr/local/texlive/2016/texmf-dist/tex/latex/graphics-cfg/color.cfg
-INPUT /usr/local/texlive/2016/texmf-dist/tex/latex/graphics-cfg/color.cfg
-INPUT /usr/local/texlive/2016/texmf-dist/tex/latex/geometry/geometry.sty
-INPUT /usr/local/texlive/2016/texmf-dist/tex/latex/geometry/geometry.sty
-INPUT /usr/local/texlive/2016/texmf-dist/tex/generic/oberdiek/ifpdf.sty
-INPUT /usr/local/texlive/2016/texmf-dist/tex/generic/oberdiek/ifpdf.sty
-INPUT /usr/local/texlive/2016/texmf-dist/tex/generic/oberdiek/ifvtex.sty
-INPUT /usr/local/texlive/2016/texmf-dist/tex/generic/oberdiek/ifvtex.sty
-INPUT /usr/local/texlive/2016/texmf-dist/tex/generic/ifxetex/ifxetex.sty
-INPUT /usr/local/texlive/2016/texmf-dist/tex/generic/ifxetex/ifxetex.sty
-INPUT /usr/local/texlive/2016/texmf-dist/tex/latex/fancyhdr/fancyheadings.sty
-INPUT /usr/local/texlive/2016/texmf-dist/tex/latex/fancyhdr/fancyheadings.sty
-INPUT /usr/local/texlive/2016/texmf-dist/tex/latex/fancyhdr/fancyhdr.sty
-INPUT /usr/local/texlive/2016/texmf-dist/tex/latex/fancyhdr/fancyhdr.sty
-INPUT /usr/local/texlive/2016/texmf-dist/tex/latex/listings/lstlang1.sty
-INPUT /usr/local/texlive/2016/texmf-dist/tex/latex/listings/lstlang1.sty
-INPUT /usr/local/texlive/2016/texmf-dist/tex/xelatex/xecjk/xeCJK-listings.sty
-INPUT /usr/local/texlive/2016/texmf-dist/tex/xelatex/xecjk/xeCJK-listings.sty
+INPUT /usr/local/texlive/2017/texmf-dist/tex/latex/base/article.cls
+INPUT /usr/local/texlive/2017/texmf-dist/tex/latex/base/article.cls
+INPUT /usr/local/texlive/2017/texmf-dist/tex/latex/base/size10.clo
+INPUT /usr/local/texlive/2017/texmf-dist/tex/latex/base/size10.clo
+INPUT /usr/local/texlive/2017/texmf-dist/tex/latex/parskip/parskip.sty
+INPUT /usr/local/texlive/2017/texmf-dist/tex/latex/parskip/parskip.sty
+INPUT /usr/local/texlive/2017/texmf-dist/tex/xelatex/xecjk/xeCJK.sty
+INPUT /usr/local/texlive/2017/texmf-dist/tex/xelatex/xecjk/xeCJK.sty
+INPUT /usr/local/texlive/2017/texmf-dist/tex/latex/l3kernel/expl3.sty
+INPUT /usr/local/texlive/2017/texmf-dist/tex/latex/l3kernel/expl3.sty
+INPUT /usr/local/texlive/2017/texmf-dist/tex/latex/l3kernel/expl3-code.tex
+INPUT /usr/local/texlive/2017/texmf-dist/tex/latex/l3kernel/expl3-code.tex
+INPUT /usr/local/texlive/2017/texmf-dist/tex/generic/unicode-data/UnicodeData.txt
+INPUT /usr/local/texlive/2017/texmf-dist/tex/generic/unicode-data/CaseFolding.txt
+INPUT /usr/local/texlive/2017/texmf-dist/tex/generic/unicode-data/SpecialCasing.txt
+INPUT /usr/local/texlive/2017/texmf-dist/tex/latex/l3kernel/l3xdvipdfmx.def
+INPUT /usr/local/texlive/2017/texmf-dist/tex/latex/l3kernel/l3xdvipdfmx.def
+INPUT /usr/local/texlive/2017/texmf-dist/tex/latex/l3packages/xtemplate/xtemplate.sty
+INPUT /usr/local/texlive/2017/texmf-dist/tex/latex/l3packages/xtemplate/xtemplate.sty
+INPUT /usr/local/texlive/2017/texmf-dist/tex/latex/l3packages/xparse/xparse.sty
+INPUT /usr/local/texlive/2017/texmf-dist/tex/latex/l3packages/xparse/xparse.sty
+INPUT /usr/local/texlive/2017/texmf-dist/tex/latex/l3packages/l3keys2e/l3keys2e.sty
+INPUT /usr/local/texlive/2017/texmf-dist/tex/latex/l3packages/l3keys2e/l3keys2e.sty
+INPUT /usr/local/texlive/2017/texmf-dist/tex/latex/fontspec/fontspec.sty
+INPUT /usr/local/texlive/2017/texmf-dist/tex/latex/fontspec/fontspec.sty
+INPUT /usr/local/texlive/2017/texmf-dist/tex/latex/fontspec/fontspec-xetex.sty
+INPUT /usr/local/texlive/2017/texmf-dist/tex/latex/fontspec/fontspec-xetex.sty
+INPUT /usr/local/texlive/2017/texmf-dist/tex/latex/base/tuenc.def
+INPUT /usr/local/texlive/2017/texmf-dist/tex/latex/base/fontenc.sty
+INPUT /usr/local/texlive/2017/texmf-dist/tex/latex/base/fontenc.sty
+INPUT /usr/local/texlive/2017/texmf-dist/tex/latex/base/tuenc.def
+INPUT /usr/local/texlive/2017/texmf-dist/tex/latex/base/tuenc.def
+INPUT /usr/local/texlive/2017/texmf-dist/tex/latex/fontspec/fontspec.cfg
+INPUT /usr/local/texlive/2017/texmf-dist/tex/latex/fontspec/fontspec.cfg
+INPUT /usr/local/texlive/2017/texmf-dist/tex/xelatex/xecjk/xunicode-addon.sty
+INPUT /usr/local/texlive/2017/texmf-dist/tex/xelatex/xecjk/xunicode-addon.sty
+INPUT /usr/local/texlive/2017/texmf-dist/tex/xelatex/xunicode/xunicode.sty
+INPUT /usr/local/texlive/2017/texmf-dist/tex/xelatex/xunicode/xunicode.sty
+INPUT /usr/local/texlive/2017/texmf-dist/tex/latex/tipa/t3enc.def
+INPUT /usr/local/texlive/2017/texmf-dist/tex/latex/graphics/graphicx.sty
+INPUT /usr/local/texlive/2017/texmf-dist/tex/latex/graphics/graphicx.sty
+INPUT /usr/local/texlive/2017/texmf-dist/tex/latex/graphics/keyval.sty
+INPUT /usr/local/texlive/2017/texmf-dist/tex/latex/graphics/keyval.sty
+INPUT /usr/local/texlive/2017/texmf-dist/tex/latex/graphics/graphics.sty
+INPUT /usr/local/texlive/2017/texmf-dist/tex/latex/graphics/graphics.sty
+INPUT /usr/local/texlive/2017/texmf-dist/tex/latex/graphics/trig.sty
+INPUT /usr/local/texlive/2017/texmf-dist/tex/latex/graphics/trig.sty
+INPUT /usr/local/texlive/2017/texmf-dist/tex/latex/graphics-cfg/graphics.cfg
+INPUT /usr/local/texlive/2017/texmf-dist/tex/latex/graphics-cfg/graphics.cfg
+INPUT /usr/local/texlive/2017/texmf-dist/tex/latex/graphics-def/xetex.def
+INPUT /usr/local/texlive/2017/texmf-dist/tex/latex/graphics-def/xetex.def
+INPUT /usr/local/texlive/2017/texmf-dist/tex/xelatex/xunicode/xunicode.sty
+INPUT /usr/local/texlive/2017/texmf-dist/tex/xelatex/xunicode/xunicode.sty
+INPUT /usr/local/texlive/2017/texmf-dist/tex/xelatex/xecjk/xunicode-extra.def
+INPUT /usr/local/texlive/2017/texmf-dist/tex/xelatex/xecjk/xunicode-extra.def
+INPUT /usr/local/texlive/2017/texmf-dist/tex/xelatex/xecjk/xeCJK.cfg
+INPUT /usr/local/texlive/2017/texmf-dist/tex/xelatex/xecjk/xeCJK.cfg
+INPUT /usr/local/texlive/2017/texmf-dist/tex/latex/listings/listings.sty
+INPUT /usr/local/texlive/2017/texmf-dist/tex/latex/listings/listings.sty
+INPUT /usr/local/texlive/2017/texmf-dist/tex/latex/listings/lstmisc.sty
+INPUT /usr/local/texlive/2017/texmf-dist/tex/latex/listings/lstmisc.sty
+INPUT /usr/local/texlive/2017/texmf-dist/tex/latex/listings/listings.cfg
+INPUT /usr/local/texlive/2017/texmf-dist/tex/latex/listings/listings.cfg
+INPUT /usr/local/texlive/2017/texmf-dist/tex/latex/graphics/color.sty
+INPUT /usr/local/texlive/2017/texmf-dist/tex/latex/graphics/color.sty
+INPUT /usr/local/texlive/2017/texmf-dist/tex/latex/graphics-cfg/color.cfg
+INPUT /usr/local/texlive/2017/texmf-dist/tex/latex/graphics-cfg/color.cfg
+INPUT /usr/local/texlive/2017/texmf-dist/tex/latex/geometry/geometry.sty
+INPUT /usr/local/texlive/2017/texmf-dist/tex/latex/geometry/geometry.sty
+INPUT /usr/local/texlive/2017/texmf-dist/tex/generic/oberdiek/ifpdf.sty
+INPUT /usr/local/texlive/2017/texmf-dist/tex/generic/oberdiek/ifpdf.sty
+INPUT /usr/local/texlive/2017/texmf-dist/tex/generic/oberdiek/ifvtex.sty
+INPUT /usr/local/texlive/2017/texmf-dist/tex/generic/oberdiek/ifvtex.sty
+INPUT /usr/local/texlive/2017/texmf-dist/tex/generic/ifxetex/ifxetex.sty
+INPUT /usr/local/texlive/2017/texmf-dist/tex/generic/ifxetex/ifxetex.sty
+INPUT /usr/local/texlive/2017/texmf-dist/tex/latex/fancyhdr/fancyheadings.sty
+INPUT /usr/local/texlive/2017/texmf-dist/tex/latex/fancyhdr/fancyheadings.sty
+INPUT /usr/local/texlive/2017/texmf-dist/tex/latex/fancyhdr/fancyhdr.sty
+INPUT /usr/local/texlive/2017/texmf-dist/tex/latex/fancyhdr/fancyhdr.sty
+INPUT /usr/local/texlive/2017/texmf-dist/tex/latex/listings/lstlang1.sty
+INPUT /usr/local/texlive/2017/texmf-dist/tex/latex/listings/lstlang1.sty
+INPUT /usr/local/texlive/2017/texmf-dist/tex/xelatex/xecjk/xeCJK-listings.sty
+INPUT /usr/local/texlive/2017/texmf-dist/tex/xelatex/xecjk/xeCJK-listings.sty
 INPUT codebook.aux
 INPUT codebook.aux
 OUTPUT codebook.aux
-INPUT /usr/local/texlive/2016/texmf-dist/tex/latex/tipa/t3cmr.fd
-INPUT /usr/local/texlive/2016/texmf-dist/tex/latex/tipa/t3cmr.fd
+INPUT /usr/local/texlive/2017/texmf-dist/tex/latex/tipa/t3cmr.fd
+INPUT /usr/local/texlive/2017/texmf-dist/tex/latex/tipa/t3cmr.fd
 INPUT codebook.toc
 INPUT codebook.toc
 OUTPUT codebook.toc
-INPUT code/Building Environment/C++11.sublime-build
-INPUT /usr/local/texlive/2016/texmf-dist/tex/latex/listings/lstlang1.sty
-INPUT /usr/local/texlive/2016/texmf-dist/tex/latex/listings/lstlang1.sty
-INPUT /usr/local/texlive/2016/texmf-dist/tex/latex/listings/lstlang1.sty
-INPUT /usr/local/texlive/2016/texmf-dist/tex/latex/listings/lstlang1.sty
-INPUT code/Building Environment/C++11.sublime-build
-INPUT code/Building Environment/C++11.sublime-build
+INPUT code/Building Environment/C++.sublime-build
+INPUT /usr/local/texlive/2017/texmf-dist/tex/latex/listings/lstlang1.sty
+INPUT /usr/local/texlive/2017/texmf-dist/tex/latex/listings/lstlang1.sty
+INPUT /usr/local/texlive/2017/texmf-dist/tex/latex/listings/lstlang1.sty
+INPUT /usr/local/texlive/2017/texmf-dist/tex/latex/listings/lstlang1.sty
+INPUT code/Building Environment/C++.sublime-build
+INPUT code/Building Environment/C++.sublime-build
 INPUT code/Building Environment/default.cpp
-INPUT /usr/local/texlive/2016/texmf-dist/tex/latex/listings/lstlang1.sty
-INPUT /usr/local/texlive/2016/texmf-dist/tex/latex/listings/lstlang1.sty
-INPUT /usr/local/texlive/2016/texmf-dist/tex/latex/listings/lstlang1.sty
-INPUT /usr/local/texlive/2016/texmf-dist/tex/latex/listings/lstlang1.sty
-INPUT /usr/local/texlive/2016/texmf-dist/tex/latex/listings/lstmisc.sty
-INPUT /usr/local/texlive/2016/texmf-dist/tex/latex/listings/lstmisc.sty
+INPUT /usr/local/texlive/2017/texmf-dist/tex/latex/listings/lstlang1.sty
+INPUT /usr/local/texlive/2017/texmf-dist/tex/latex/listings/lstlang1.sty
+INPUT /usr/local/texlive/2017/texmf-dist/tex/latex/listings/lstlang1.sty
+INPUT /usr/local/texlive/2017/texmf-dist/tex/latex/listings/lstlang1.sty
+INPUT /usr/local/texlive/2017/texmf-dist/tex/latex/listings/lstmisc.sty
+INPUT /usr/local/texlive/2017/texmf-dist/tex/latex/listings/lstmisc.sty
 INPUT code/Building Environment/default.cpp
 INPUT code/Building Environment/default.cpp
+OUTPUT codebook.xdv
 INPUT code/Building Environment/Preferences.sublime-settings
 INPUT code/Building Environment/Preferences.sublime-settings
 INPUT code/Building Environment/Preferences.sublime-settings
 INPUT code/Building Environment/print_file.py
-INPUT /usr/local/texlive/2016/texmf-dist/tex/latex/listings/lstlang1.sty
-INPUT /usr/local/texlive/2016/texmf-dist/tex/latex/listings/lstlang1.sty
+INPUT /usr/local/texlive/2017/texmf-dist/tex/latex/listings/lstlang1.sty
+INPUT /usr/local/texlive/2017/texmf-dist/tex/latex/listings/lstlang1.sty
 INPUT code/Building Environment/print_file.py
 INPUT code/Building Environment/print_file.py
 INPUT code/Building Environment/vimrc
@@ -133,15 +126,15 @@ INPUT code/Building Environment/vimrc
 INPUT code/Convolution/FFT.cpp
 INPUT code/Convolution/FFT.cpp
 INPUT code/Convolution/FFT.cpp
+INPUT code/Convolution/SunMoon FFT.cpp
+INPUT code/Convolution/SunMoon FFT.cpp
+INPUT code/Convolution/SunMoon FFT.cpp
 INPUT code/Geometry/geometry.cpp
 INPUT code/Geometry/geometry.cpp
 INPUT code/Geometry/geometry.cpp
 INPUT code/Geometry/MinimumCoveringCircle.cpp
 INPUT code/Geometry/MinimumCoveringCircle.cpp
 INPUT code/Geometry/MinimumCoveringCircle.cpp
-INPUT code/GNU Black Magic/Black_Magic.cpp
-INPUT code/GNU Black Magic/Black_Magic.cpp
-INPUT code/GNU Black Magic/Black_Magic.cpp
 INPUT code/GNU Black Magic/GNU_bitwise_operation.cpp
 INPUT code/GNU Black Magic/GNU_bitwise_operation.cpp
 INPUT code/GNU Black Magic/GNU_bitwise_operation.cpp
@@ -155,8 +148,8 @@ INPUT code/Graph/SCC.cpp
 INPUT code/Graph/SCC.cpp
 INPUT code/Graph/SCC.cpp
 INPUT code/Java/Big Integer.java
-INPUT /usr/local/texlive/2016/texmf-dist/tex/latex/listings/lstlang1.sty
-INPUT /usr/local/texlive/2016/texmf-dist/tex/latex/listings/lstlang1.sty
+INPUT /usr/local/texlive/2017/texmf-dist/tex/latex/listings/lstlang1.sty
+INPUT /usr/local/texlive/2017/texmf-dist/tex/latex/listings/lstlang1.sty
 INPUT code/Java/Big Integer.java
 INPUT code/Java/Big Integer.java
 INPUT code/Java/Prime.java
@@ -183,9 +176,12 @@ INPUT code/Matching/Min Cost Flow.cpp
 INPUT code/Matching/Stable Marriage.cpp
 INPUT code/Matching/Stable Marriage.cpp
 INPUT code/Matching/Stable Marriage.cpp
-INPUT code/Mathematics/extgcd.cpp
-INPUT code/Mathematics/extgcd.cpp
-INPUT code/Mathematics/extgcd.cpp
+INPUT code/Mathematics/Extended GCD.cpp
+INPUT code/Mathematics/Extended GCD.cpp
+INPUT code/Mathematics/Extended GCD.cpp
+INPUT code/Mathematics/Lucas's Theorem.py
+INPUT code/Mathematics/Lucas's Theorem.py
+INPUT code/Mathematics/Lucas's Theorem.py
 INPUT code/Mathematics/Miller-Rabin.cpp
 INPUT code/Mathematics/Miller-Rabin.cpp
 INPUT code/Mathematics/Miller-Rabin.cpp
@@ -204,16 +200,10 @@ INPUT code/String/Suffix_Automaton.cpp
 INPUT code/String/Z_Algorithm.cpp
 INPUT code/String/Z_Algorithm.cpp
 INPUT code/String/Z_Algorithm.cpp
-INPUT code/Struct/splay_tree.cpp
-INPUT code/Struct/splay_tree.cpp
-INPUT code/Struct/splay_tree.cpp
 INPUT code/Struct/Treap.cpp
 INPUT code/Struct/Treap.cpp
 INPUT code/Struct/Treap.cpp
 INPUT code/Tree/Heavy_Light_Decomposition.cpp
 INPUT code/Tree/Heavy_Light_Decomposition.cpp
 INPUT code/Tree/Heavy_Light_Decomposition.cpp
-INPUT code/Tree/KDtree_insert.cpp
-INPUT code/Tree/KDtree_insert.cpp
-INPUT code/Tree/KDtree_insert.cpp
 INPUT codebook.aux
