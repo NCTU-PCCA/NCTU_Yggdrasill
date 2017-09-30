@@ -138,6 +138,9 @@ INPUT code/Geometry/MinimumCoveringCircle.cpp
 INPUT code/GNU Black Magic/GNU_bitwise_operation.cpp
 INPUT code/GNU Black Magic/GNU_bitwise_operation.cpp
 INPUT code/GNU Black Magic/GNU_bitwise_operation.cpp
+INPUT code/Graph/Articulation Point.cpp
+INPUT code/Graph/Articulation Point.cpp
+INPUT code/Graph/Articulation Point.cpp
 INPUT code/Graph/BCC.cpp
 INPUT code/Graph/BCC.cpp
 INPUT code/Graph/BCC.cpp
