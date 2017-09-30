@@ -36,3 +36,11 @@ desktop.ini
 *.gz
 
 *.fdb_latexmk
+
+*.fdb_latexmk
+
+*.fls
+
+*.gz
+
+*.xdv
