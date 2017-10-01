@@ -1,96 +1,71 @@
-#include <cstdlib>
-#include <iostream>
-#include <vector>
-#include <queue>
-#define N 300002
+// Kosaraju - Find SCC by twice dfs, and the SCC DAG is in the Topology
+// ordering.
+// Owner: samsam2310
+//
+#include <bits/stdc++.h>
+#define N 300002 // Maximum number of vertices
 using namespace std;
-vector<int>go[N],back[N],tree[N];
-int hu[N],ST[N],st=0,scc[N],scCo[N],scmx[N];
-bool wed[N];
-int DFS_go(int now){
-    //cout<<now<<" DFS ";
-    wed[now]=true;
-    for(int i=0;i<go[now].size();i++){
-        if(!wed[go[now][i]])
-            DFS_go(go[now][i]);
-    }
-    ST[st++]=now;
-    return 0;
+vector<int> forward_graph[N];  // original graph
+vector<int> backward_graph[N]; // reverse graph
+vector<int> dag_graph[N];      // result dag graph(graph of scc)
+int scc[N];                    // SCC index of a vertex
+bool visit[N];
+void init() {
+    fill(forward_graph, forward_graph + N, vector<int>());
+    fill(backward_graph, backward_graph + N, vector<int>());
+    fill(dag_graph, dag_graph + N, vector<int>());
 }
-int DFS_back(int now,int id){
-    wed[now]=true;
-    scc[now]=id;
-    int sum=1;
-    if(now==0)sum=0;
-    for(int i=0;i<back[now].size();i++){
-        if(!wed[back[now][i]])
-            sum+=DFS_back(back[now][i],id);
+void dfs(vector<int> &graph, int now, int scc_id,
+         stack<int> *leave_order = NULL) {
+    visit[now] = true;
+    if (scc != -1) {
+        scc[now] = scc_id;
     }
-    return sum;
-}
-int DFS_tree(int now)
-{
-    if(scmx[now]!=0)return scmx[now];
-    int mx=0,tmp;
-    for(int i=0;i<tree[now].size();i++){
-        tmp=DFS_tree(tree[now][i]);
-        mx=(mx>tmp)? mx:tmp;
+    for (int v : graph[now]) {
+        if (!visit[v]) {
+            dfs(graph, v, scc_id, leave_order);
+        }
     }
-    scmx[now]=mx+scCo[now];
-    return mx+scCo[now];
+    if (leave_order) {
+        leave_order->push(now);
+    }
 }
-int main(int argc,char *argv[])
-{
+int main(int argc, char *argv[]) {
     ios_base::sync_with_stdio(false);
-    int n,k;
-    char c;
-    cin>>n>>k>>hu[1];
-    go[0].push_back(1);
-    back[1].push_back(0);
-    for(int i=2;i<=n;i++){
-        cin>>hu[i];
-        if(hu[i]>=hu[i-1]){
-            go[i].push_back(i-1);
-            back[i-1].push_back(i);
-        }
-        if(hu[i-1]>=hu[i]){
-            go[i-1].push_back(i);
-            back[i].push_back(i-1);
-        }
-        go[0].push_back(i);
-        back[i].push_back(0);
+    cin.tie(0);
+    init();
+    cin >> n;
+    for (int i = 0; i < n; ++i) {
+        int a, b; // edge of a -> b
+        cin >> a >> b;
+        forward_graph[a].push_back(b);
+        backward_graph[b].push_back(a);
     }
-    for(int i=1;i<=n;i++){
-        cin>>c;
-        if(c=='T'){
-            go[i].push_back(0);
-            back[0].push_back(i);
+    // Find the SCC.
+    memset(visit, 0, sizeof(visit));
+    stack<int> leave_order;
+    for (int i = 0; i < n; ++i) {
+        if (!visit[i]) {
+            dfs(forward_graph, i, -1, &leave_order);
         }
     }
-    for(int i=0;i<=n;i++)
-        if(!wed[i])DFS_go(i);
-    //cout<<endl;
-    fill((bool*)wed,(bool*)wed+N,false);
-    int tsc=0;
-    // for(int i=0;i<st;i++)cout<<ST[i]<<" HH ";
-    // cout<<endl;
-    while(st!=0)
-        if(!wed[ST[--st]]){
-            scCo[tsc]=DFS_back(ST[st],tsc);
-            tsc++;
+    memset(visit, 0, sizeof(visit));
+    int scc_id = 0;
+    while (!leave_order.empty()) {
+        int v = leave_order.top();
+        leave_order.pop();
+        if (!visit[v]) {
+            dfs(backward_graph, i, scc_id, NULL);
+            ++scc_id;
         }
-    // for(int i=0;i<N;i++)
-    //     while(!back[i].empty())back[i].pop_back();
-    for(int i=0;i<=n;i++)
-        for(int j=0;j<go[i].size();j++){
-            if(scc[i]!=scc[go[i][j]]){
-                tree[scc[i]].push_back(scc[go[i][j]]);
+    }
+    // Build the SCC DAG.
+    for (int i = 0; i < n; ++i) {
+        for (int v : forward_graph[i]) {
+            if (scc[i] != scc[v]) {
+                dag_graph[scc[i]].push_back(scc[v]);
             }
         }
-    // for(int i=0;i<=n;i++)cout<<scc[i]<<" BB ";
-    // cout<<endl;
-    // for(int i=0;i<tsc;i++)cout<<scCo[i]<<" GG ";
-    cout<<DFS_tree(scc[k])<<endl;
-    //system("pause");
+    }
     return 0;
 }
