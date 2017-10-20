@@ -76,7 +76,7 @@ void IFFT(COMPLEX x[],int nfft)
         x[i].im /= nfft;
     }
 }
-int main(void) {
+int main() {
     int t_num;
     int i,ii,iii;
     int p_num;
