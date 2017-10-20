@@ -26,6 +26,7 @@ inline point oc(const point& pa, const point& pb, const point& pc) {
 	return point(dx/delta, dy/delta);
 }
 inline point enc(const vector<point>& tmp) {
+	random_shuffle(tmp.begin(), tmp.end());
 	point O = tmp[0];
 	double r = 0;
 	Fl(i, 1, tmp.size()) if (dq(O, tmp[i]) - r > eps) {
