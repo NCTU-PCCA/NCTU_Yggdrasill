@@ -6,9 +6,7 @@ public class Main{
         Scanner scanner = new Scanner(System.in);
         int T = scanner.nextInt();
         for (int cs = 0 ; cs < T ; cs++){
-            if (cs != 0) {
-                System.out.println("");
-            }
+            if (cs != 0) { System.out.println(""); }
             int a = scanner.nextInt();
             int b = scanner.nextInt();
             for (int i = a ; i <= b ; i++) {
@@ -17,7 +15,6 @@ public class Main{
                     System.out.println(x);
                 }
             }
-
         }
     }
 }

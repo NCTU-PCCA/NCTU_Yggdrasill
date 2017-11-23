@@ -1,74 +1,83 @@
-#define maxnode (1000+10) 
-#define maxedge (40000+10)
-#define INF 1023456789
 #include<bits/stdc++.h>
 using namespace std;
-int node, src, dest, nedge; 
-int head[maxnode], point[maxedge], nxt[maxedge], flow[maxedge], capa[maxedge], wt[maxedge]; 
-int dist[maxnode], in[maxnode], from[maxnode], mf[maxnode]; 
-//set number of node, source, and destination (one base)
-void init(int _node, int _src, int _dest) { 
-    node = _node; 
-    src = _src; 
-    dest = _dest; 
-    nedge = 0; 
-    memset(point, -1, sizeof(point)); 
-    for (int i = 1; i <= node; i++) head[i] = -1; 
-    nedge = 0; 
-} 
-void add_edge(int u, int v, int c1, int w) { 
-    point[nedge] = v, capa[nedge] = c1, flow[nedge] = 0, nxt[nedge] = head[u], wt[nedge]=w, head[u] = (nedge++); 
-    point[nedge] = u, capa[nedge] = 0, flow[nedge] = 0, nxt[nedge] = head[v], wt[nedge]=-w, head[v] = (nedge++); 
-} 
-int sp(int &left){
-	for(int i=1;i<=node;i++) dist[i]=INF;
-	queue<int> que;
-	que.push(src);
-	in[src]=1;
-	mf[src]=left;
-	dist[src]=0;
-	while(!que.empty()){
-		int u=que.front();
-		que.pop();
-		in[u]=0;
-		if(dist[u]>=dist[dest]) continue;
-		for(int v=head[u];v!=-1;v=nxt[v]){
-			if(flow[v]==capa[v]) continue;
-			if(dist[u]+wt[v]<dist[point[v]]){
-				dist[point[v]]=dist[u]+wt[v];
-				from[point[v]]=v;
-				mf[point[v]]=min(mf[u],capa[v]-flow[v]);
-				if(!in[point[v]]){
-					in[point[v]]=1;
-					que.push(point[v]);
-				}
-			}
-		}
-	}
-	left-=mf[dest];
-	if(dist[dest]<INF){
-		for(int u=dest;u!=src;u=point[from[u]^1]){
-			flow[from[u]]+=mf[dest];
-			flow[from[u]^1]-=mf[dest];
-		}
-	}
-	return dist[dest];
+#define int long long
+typedef pair<int,int> P;
+struct edge{
+    edge(){}
+    edge(int a,int b,int c,int d):to(a),cap(b),cost(c),rev(d){}
+    int to,cap,cost,rev;
+};
+#define V 210
+#define inf 1000000000000000
+vector<edge> g[V];
+int h[V],dist[V],prev_v[V],prev_e[V];
+void add_edge(int from,int to,int cap,int cost){
+    g[from].push_back(edge(to,cap,cost,g[to].size()));
+    g[to].push_back(edge(from,0,-cost,g[from].size()-1));
 }
-int min_cost_flow(){
-	int res=0,tmp,maxflow=2;
-	while(maxflow&&(tmp=sp(maxflow))<INF) res+=tmp;
-	return res;
+int min_costflow(int s,int t,int f){
+    int res=0;
+    memset(h,0,sizeof(h));
+    while(f>0){
+        priority_queue<P,vector<P>,greater<P> >que;
+        fill(dist,dist+V,inf);
+        dist[s]=0;
+        que.push(P(dist[s],s));
+        while(!que.empty()){
+            P p=que.top();
+            que.pop();
+            int v=p.second;
+            if(dist[v]<p.first)continue;
+            for(int i=0;i<g[v].size();++i){
+                edge &e=g[v][i];
+                if(e.cap>0&&dist[e.to]>dist[v]+e.cost+h[v]-h[e.to]){
+                    dist[e.to]=dist[v]+e.cost+h[v]-h[e.to];
+                    prev_v[e.to]=v;
+                    prev_e[e.to]=i;
+                    que.push(P(dist[e.to],e.to));
+                }
+            }
+        }
+        if(dist[t]==inf) return -1;
+        for(int v=0;v<V;++v)h[v]+=dist[v];
+        int d=f;
+        for(int v=t;v!=s;v=prev_v[v]) d=min(d,g[prev_v[v]][prev_e[v]].cap);
+        f-=d;
+        res+=d*h[t];
+        for(int v=t;v!=s;v=prev_v[v]){
+            edge &e=g[prev_v[v]][prev_e[v]];
+            e.cap-=d;
+            g[v][e.rev].cap+=d;
+        }
+    }
+    return res;
 }
-int main(){
-	int n,m,x,y,z;
-	while(scanf("%d%d",&n,&m)==2){
-		init(n,1,n);
-		for(int i=0;i<m;i++){
-			scanf("%d%d%d",&x,&y,&z);
-			add_edge(x,y,1,z);
-			add_edge(y,x,1,z); //undirected
-		}
-		printf("%d\n",min_cost_flow());
-	}
-	return 0;
+#undef int
+int main()
+{
+#define int long long
+    int T,n,m,cost,l,s,t,ans;
+    cin>>T;
+    while(T--){
+    	cin>>n>>m;
+        for(int q=0;q<V;++q)g[q].clear();
+        s=m+n;
+        t=m+n+1;
+        for(int i=0;i<n;++i)
+        	for(int j=0;j<m;++j){
+        		cin>>cost;
+        		if(cost>0)
+        			add_edge(n+j,i,1,cost);
+        	}
+        for(int i=0;i<m;++i){
+        	cin>>l;
+        	add_edge(s,n+i,l,0);
+        }
+        for(int i=0;i<n;++i)
+        	add_edge(i,t,1,0);
+        ans=min_costflow(s,t,n);
+        cout<<ans<<endl;
+    }
+    return 0;
 }
+

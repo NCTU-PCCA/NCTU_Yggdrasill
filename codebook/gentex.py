@@ -63,10 +63,11 @@ doc_head = '''\\begin {document}
 '''
 
 tail = '''
+\\input{note.tex}
 \\end{document}
 '''
 
-src_types = ['.c', '.cpp', '.java', '.py', '.sublime-build', '.sublime-settings']
+src_types = ['.c', '.cpp', '.java', '.py', '.sublime-build', '.sublime-settings', '.sh']
 
 lang_list = {
   '.c': 'c',
@@ -74,7 +75,8 @@ lang_list = {
   '.java': 'java',
   '.py': 'python',
   '.sublime-build': 'bash',
-  '.sublime-settings': 'bash'
+  '.sublime-settings': 'bash',
+  '.sh': 'bash'
 }
 
 import os
@@ -91,10 +93,10 @@ def capitalize(line):
 
 outname = 'codebook.tex'
 sys.stdout = open(outname, 'w')
-print doc_class
-print head
-print lstset
-print doc_head
+print(doc_class)
+print(head)
+print(lstset)
+print(doc_head)
 for root, dirs, files in os.walk('code'):
   if root.find('.svn') >= 0:
     continue
@@ -103,17 +105,19 @@ for root, dirs, files in os.walk('code'):
     continue
   if escape(secname) == 'code':
     continue
-  print '\\section{' + capitalize(secname.replace('_', ' ')) + '}'
+  section_name = capitalize(secname.replace('_', ' '))
+  print(f'\\section{{{section_name}}}')
   for name in files:
     base, ext = os.path.splitext(name)
     if name != 'vimrc' and ext not in src_types:
       continue
-    print '\\subsection{' + capitalize(base.replace('_', ' ')) + '}'
+    subsection_name = capitalize(base.replace('_', ' '))
+    print(f'\\subsection{{{subsection_name}}}')
     if ext not in src_types:
       lang = 'bash'
     else:
       lang = lang_list[ext]
-    print '\\lstinputlisting [language=' + lang + '] {\"code/' + escape(secname) + '/' + name + '\"}'
-print tail
+    print(f'\\lstinputlisting [language={lang}] {{\"code/{escape(secname)}/{name}\"}}')
+print(tail)
 sys.stdout.flush()
 # subprocess.call(['bg5pdflatex', outname])

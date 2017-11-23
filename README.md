@@ -6,7 +6,7 @@
 
 ## Codebook
 ### Requirement
-- Python 2.7.10
+- Python 3.6.1
 - Xelatex (For Chinese)
 
 ### Usage

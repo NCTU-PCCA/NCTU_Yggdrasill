@@ -1,121 +1,94 @@
-#include <cstdio>
-#include <cstring>
-#include <cmath>
-const double PI=acos(-1.0);
-typedef  struct {
-    double  real;
-    double  im;
-} COMPLEX;
-COMPLEX X[66000],Y[66000],A[66000];
-COMPLEX EE(COMPLEX a,COMPLEX b)
-{
-    COMPLEX c;
-    c.real=a.real*b.real-a.im*b.im;
-    c.im=a.real*b.im+a.im*b.real;
-    return c;
-}
-/* 1 FFT , -1 IFFT */
-void fft(COMPLEX x[],int nfft,int isign)
-{
-    int i,j=0,k;
-    COMPLEX t;
-    for(i=1, j = nfft / 2;i<nfft-1;i++)
-    {
-        if(i<j)
-        {
-            t=x[j];
-            x[j]=x[i];
-            x[i]=t;
-        }
-        k=nfft/2;
-        while(k<=j)
-        {
-            j-=k;
-            k/=2;
-        }
-        if (j < k)
-            j+=k;
+#include <bits/stdc++.h>
+using namespace std;
+
+const double PI = 3.1415926535897932;
+
+struct Complex{
+    typedef double T;
+    T x, y;
+    Complex (T _x=0.0, T _y=0.0)
+        :x(_x),y(_y){ }
+    Complex operator + (const Complex &b) { return Complex(x+b.x,y+b.y); }
+    Complex operator - (const Complex &b) { return Complex(x-b.x,y-b.y); }
+    Complex operator * (const Complex &b) { return Complex(x*b.x-y*b.y,x*b.y+y*b.x); }
+};
+
+void BitReverse(Complex *a, int n){
+    for (int i=1, j=0; i<n; i++){
+        for (int k = n>>1; k>(j^=k); k>>=1);
+        if (i<j) swap(a[i],a[j]);
     }
-    int le,lei,ip;
-    COMPLEX u,w, v;
-    for(le=2;le<=nfft;le *= 2)
-    {
-        lei=le/2;
-        w.real=cos(2.0*PI*isign/le);
-        w.im=sin(2.0*PI*isign/le);
-        for(i=0;i<nfft;i+=le)
-        {
-            u.real=1.0;
-            u.im=0.0;
-            for(j = i ; j < i + lei ; ++j)
-            {
-                ip=j+lei;
-                v = x[j];
-                t=EE(u, x[ip]);
-                x[j].real=v.real+t.real;
-                x[j].im=v.im+t.im;
-                x[ip].real=v.real-t.real;
-                x[ip].im=v.im-t.im;
-                u=EE(u,w);
+}
+
+void FFT(Complex *a, int n, int rev=1){ // rev = 1 or -1
+    BitReverse(a,n);
+    Complex *A = a;
+
+    for (int s=1; (1<<s)<=n; s++){
+        int m = (1<<s);
+
+        Complex wm( cos(2*PI*rev/m) , sin(2*PI*rev/m) );
+        for (int k=0; k<n; k+=m){
+            Complex w(1,0);
+            for (int j=0; j<(m>>1); j++){
+                Complex t = w * A[k+j+(m>>1)];
+                Complex u = A[k+j];
+                A[k+j] = u+t;
+                A[k+j+(m>>1)] = u-t;
+                w = w*wm;
             }
         }
     }
+
+    if (rev==-1){
+        for (int i=0; i<n; i++){
+            A[i].x /= n;
+            A[i].y /= n;
+        }
+    }
 }
-void FFT(COMPLEX x[], int nfft)
-{
-    fft(x,nfft,1);   
+
+const int MAXN = 65536;
+int n;
+Complex a[MAXN], b[MAXN];
+
+void input(){
+    scanf("%d", &n);
+
+    for (int i=0 ,ai; i<n; i++){
+        scanf("%d", &ai);
+        a[i] = Complex(ai,0);
+    }
+
+    for (int i=0, bi; i<n; i++){
+        scanf("%d", &bi);
+        b[i] = Complex(bi,0);
+    }
+
+    for (int i=n; i<MAXN; i++){
+        a[i] = b[i] = Complex(0,0);
+    }
 }
-void IFFT(COMPLEX x[],int nfft)
-{
-    int i;
-    fft(x,nfft,-1);
+
+void solve(){
+    FFT(a,MAXN);
+    FFT(b,MAXN);
+
+    for (int i=0; i<MAXN; i++){
+        a[i] = a[i]*b[i];
+    }
     
-    for(i=0;i<nfft;i++)
-    {
-        x[i].real /= nfft;
-        x[i].im /= nfft;
+    FFT(a,MAXN,-1);
+    for (int i=0; i<2*n-1; i++){
+        printf("%.0f%c", a[i].x, i==2*n-2?'\n':' ');
     }
 }
-int main() {
-    int t_num;
-    int i,ii,iii;
-    int p_num;
-    int Nx;
-    int NFFT;
-    int temp;
-    scanf("%d",&t_num);
-    for(i=0;i<t_num;i++){
-        scanf("%d",&p_num);
-        Nx=p_num*2-1;
-        NFFT = 2 << (int)log2(Nx);
-        for(ii=0;ii<p_num;++ii){
-            scanf("%d",&temp);
-            X[ii].real=(double)temp;
-            X[ii].im=0.0;
-        }
-        for(iii=0;iii<p_num;++iii){
-            
-            scanf("%d",&temp);
-            Y[iii].real=(double)temp;
-            Y[iii].im=0.0;
-        }
-        for(ii=p_num;ii<NFFT;ii++)
-        {
-            X[ii].real=0.0;
-            X[ii].im=0.0;
-            Y[ii].real=0.0;
-            Y[ii].im=0.0;
-        }
-        FFT(X,NFFT);
-        FFT(Y,NFFT);
-        for(ii=0;ii<NFFT;ii++){
-            A[ii] = EE(X[ii], Y[ii]);
-        }
-        IFFT(A,NFFT);
-        for(ii=0;ii<Nx;ii++){
-            printf("%d ", (int)round(A[ii].real));
-        }
-        printf("\n");
+
+int main(){
+    int T; scanf("%d",&T);
+
+    while (T--){
+        input();
+        solve();
     }
-    return 0;
 }
