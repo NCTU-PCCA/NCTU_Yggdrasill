@@ -1,9 +1,9 @@
-/* 对于区间求和 */
+/* 區間求和 */
 void push_up(int rt) {
     tree[rt] = tree[rt << 1] + tree[rt << 1 | 1];
 }
 
-/* 对于区间求最大值 */
+/* 區間求最大值 */
 void push_up(int rt) {
     tree[rt] = max(tree[rt << 1], tree[rt << 1 | 1]);
 }
